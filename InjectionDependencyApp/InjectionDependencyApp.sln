@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryDataSource", "MemoryDataSource\MemoryDataSource.csproj", "{53680CB0-48F4-431D-92E7-C389A21CCC16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{53680CB0-48F4-431D-92E7-C389A21CCC16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53680CB0-48F4-431D-92E7-C389A21CCC16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53680CB0-48F4-431D-92E7-C389A21CCC16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

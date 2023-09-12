@@ -1,11 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ConsoleApp;
-using MemoryDataSource;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Repositories;
-using UseCases;
-
 
 /// con servicios
 /// ==================================================================
@@ -29,15 +25,29 @@ using UseCases;
 
 /// con HOST
 /// ==================================================================
+//HostApplicationBuilder builder = Host.CreateApplicationBuilder();
+
+//builder.Services.AddSingleton<ProductRepository>();
+//builder.Services.AddSingleton<ProductsDataSource>();
+//builder.Services.AddSingleton<GetProductInteractor>();
+//builder.Services.AddSingleton<GetProductController>();
+
+//using IHost AppHost = builder.Build();
+
+//var controller = AppHost.Services.GetRequiredService<GetProductController>();
+
+//controller.GetProduct();
+
+/// ==================================================================
+// IoC  - se crea un proyecto para agregar los servicios.
+/// ==================================================================
+
 HostApplicationBuilder builder = Host.CreateApplicationBuilder();
 
-builder.Services.AddSingleton<ProductRepository>();
-builder.Services.AddSingleton<ProductsDataSource>();
-builder.Services.AddSingleton<GetProductInteractor>();
+builder.Services.AddDIServices();
 builder.Services.AddSingleton<GetProductController>();
 
 using IHost AppHost = builder.Build();
 
-var controller = AppHost.Services.GetRequiredService<GetProductController>();
-
+GetProductController controller = AppHost.Services.GetRequiredService<GetProductController>();
 controller.GetProduct();
