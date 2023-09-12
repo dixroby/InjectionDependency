@@ -5,12 +5,16 @@ namespace UseCases
 {
     public class GetProductInteractor
     {
-        readonly ProductRepository repository = new ProductRepository();
+        readonly ProductRepository _repository;
+        public GetProductInteractor(ProductRepository repository)
+        {
+            _repository = repository;
+        }
         public Product GetProductById(int id)
         {
             if (id <= 0)
                 throw new ArgumentException("El id debe ser mayor que 0");
-            return repository.GetProductByiD(id);
-        } 
+            return _repository.GetProductByiD(id);
+        }
     }
 }
