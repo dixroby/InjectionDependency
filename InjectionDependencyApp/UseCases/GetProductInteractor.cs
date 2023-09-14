@@ -1,12 +1,12 @@
 ﻿using Entities;
-using Repositories;
+using Entities.Interfaces;
 
 namespace UseCases
 {
-    public class GetProductInteractor
+    internal class GetProductInteractor: IGetProductsInputPort
     {
-        readonly ProductRepository _repository;
-        public GetProductInteractor(ProductRepository repository)
+        readonly IProductsRepository _repository;
+        public GetProductInteractor(IProductsRepository repository)
         {
             _repository = repository;
         }

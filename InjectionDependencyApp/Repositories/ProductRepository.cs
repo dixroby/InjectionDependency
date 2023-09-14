@@ -1,12 +1,12 @@
 ﻿using Entities;
-using MemoryDataSource;
+using Entities.Interfaces;
 
 namespace Repositories
 {
-    public class ProductRepository
+    internal class ProductRepository: IProductsRepository
     {
-        readonly ProductsDataSource _productsDataSource;
-        public ProductRepository(ProductsDataSource productsDataSource)
+        readonly IProductsDataSource _productsDataSource;
+        public ProductRepository(IProductsDataSource productsDataSource)
         {
             _productsDataSource = productsDataSource;
         }

@@ -1,16 +1,13 @@
-﻿using MemoryDataSource;
-using Repositories;
-using UseCases;
-
-namespace Microsoft.Extensions.DependencyInjection;
+﻿namespace Microsoft.Extensions.DependencyInjection;
 public static class DependencyContainer
 {
     public static IServiceCollection AddDIServices(
         this IServiceCollection services)
     {
-        services.AddSingleton<ProductRepository>();
-        services.AddSingleton<ProductsDataSource>();
-        services.AddSingleton<GetProductInteractor>();
+        services.AddProductsRepository();
+        services.AddJsonProductsDataSource();
+        services.AddMemoryProductsDataSource();
+        services.AddUseCases();
         return services;
     }
 }

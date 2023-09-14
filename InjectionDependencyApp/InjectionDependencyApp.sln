@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{52BF95AC-7D3E-41C2-9A6D-48D7E5279A46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{52BF95AC-7D3E-41C2-9A6D-48D7E5279A46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositories", "Repositories\Repositories.csproj", "{98351F43-E710-4D3D-9248-B311AA339CAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{98351F43-E710-4D3D-9248-B311AA339CAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases", "UseCases\UseCases.csproj", "{465F7100-1162-4DF7-9DAC-9F59B92EDBD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCases", "UseCases\UseCases.csproj", "{465F7100-1162-4DF7-9DAC-9F59B92EDBD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{C5D2C1E0-40C8-4B0F-9B27-F8C53CACDB04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{C5D2C1E0-40C8-4B0F-9B27-F8C53CACDB04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryDataSource", "MemoryDataSource\MemoryDataSource.csproj", "{53680CB0-48F4-431D-92E7-C389A21CCC16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryDataSource", "MemoryDataSource\MemoryDataSource.csproj", "{53680CB0-48F4-431D-92E7-C389A21CCC16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC", "IoC\IoC.csproj", "{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonDataSource", "JsonDataSource\JsonDataSource.csproj", "{62096BCF-66C7-4122-91D0-A31BC8C6E74F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{359B4642-C1E1-42FE-A911-D6AB6B1DD58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62096BCF-66C7-4122-91D0-A31BC8C6E74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62096BCF-66C7-4122-91D0-A31BC8C6E74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62096BCF-66C7-4122-91D0-A31BC8C6E74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62096BCF-66C7-4122-91D0-A31BC8C6E74F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

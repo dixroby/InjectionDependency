@@ -1,20 +1,20 @@
 ﻿using Entities;
-using UseCases;
+using Entities.Interfaces;
 
 namespace ConsoleApp
 {
-    public class GetProductController
+    internal class GetProductController
     {
-        readonly GetProductInteractor _interactor;
+        readonly IGetProductsInputPort _interactor;
 
-        public GetProductController(GetProductInteractor interactor)
+        public GetProductController(IGetProductsInputPort interactor)
         {
             _interactor = interactor;
         }
 
         public void GetProduct()
         {
-            Console.WriteLine("Id de producto: ");
+            Console.Write("Id de producto: ");
             int Id = int.Parse(Console.ReadLine());
 
             Product product = _interactor.GetProductById(Id);
